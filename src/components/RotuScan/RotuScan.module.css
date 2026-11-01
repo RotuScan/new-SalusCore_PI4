@@ -1,24 +1,14 @@
-.rotuscan {
-  width: 100%;
-  min-height: 440px;
-  padding: 35px 7% 25px;
-  box-sizing: border-box;
-  background: #ffffff;
-  color: #111111;
-  border-top: 3px solid #2876ff;
-  border-bottom: 3px solid #2876ff;
-  overflow: hidden;
-}
-
 .container {
   max-width: 1250px;
   min-height: 380px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 25px;
+  gap: 0;
 }
+
+
 
 .content {
   position: relative;
@@ -125,29 +115,33 @@
 
 .visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-width: 0;
+  margin-left: -35px;
 }
 
 .visual img {
   display: block;
   width: 100%;
-  max-width: 460px;
+  max-width: 480px;
   height: auto;
   object-fit: contain;
 }
 
 /* Tablets */
-
 @media (max-width: 850px) {
   .rotuscan {
     padding: 35px 5%;
   }
 
   .container {
-    grid-template-columns: 1fr 0.8fr;
-    gap: 10px;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 0;
+  }
+
+  .visual {
+    margin-left: -15px;
   }
 
   .description {
