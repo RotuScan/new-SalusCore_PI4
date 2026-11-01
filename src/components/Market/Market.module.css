@@ -1,0 +1,180 @@
+.market {
+  width: 100%;
+  min-height: 470px;
+  padding: 40px 7% 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background: linear-gradient(
+    115deg,
+    #071b59 0%,
+    #061b58 55%,
+    #031443 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.market::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.9),
+    transparent
+  );
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sectionLabel span {
+  color: #4b91ff;
+  border: 1px solid #2864c8;
+  background: rgba(32, 91, 190, 0.25);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.sectionLabel div {
+  width: 45px;
+  height: 1px;
+  background: #2456a8;
+}
+
+.market h2 {
+  max-width: 500px;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  font-weight: 750;
+  margin: 0 0 16px;
+}
+
+.market h2 span {
+  display: block;
+  color: #3675f5;
+}
+
+.intro {
+  max-width: 950px;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 450;
+  margin: 0;
+  color: #f1f4ff;
+}
+
+.intro strong {
+  color: #3979ff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 42px;
+}
+
+.card {
+  min-height: 175px;
+  padding: 16px 18px;
+  box-sizing: border-box;
+  border: 1px solid #234eaa;
+  border-radius: 13px;
+  background: rgba(20, 38, 91, 0.85);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(28, 51, 116, 0.95);
+}
+
+.cardIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #779aff;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 14px;
+  color: #ffffff;
+}
+
+.card p {
+  color: #c4cce2;
+  font-size: 12px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Tablets */
+
+@media (max-width: 800px) {
+  .market {
+    padding: 35px 5%;
+  }
+
+  .cards {
+    gap: 12px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+  .market {
+    padding: 35px 6%;
+  }
+
+  .market h2 {
+    font-size: 32px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 28px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .cardIcon {
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+}
