@@ -3,24 +3,25 @@ import About from '../../components/About/About'
 import Hero from '../../components/Hero/Hero'
 import Market from '../../components/Market/Market'
 import styles from './Home.module.css'
+import RotuScan from '../../components/RotuScan/RotuScan'
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Navbar />
+      
       <main>
+
+        <Navbar />
+        
         <Hero />
 
-        
-       <About />
+        <About />
 
-      <Market />
+        <Market />
 
-        <section id="projeto" className={styles.placeholderSection}>
-          <span className={styles.eyebrow}>NOSSO PROJETO</span>
-          <h2>Rotu<span className={styles.green}>Scan</span></h2>
-          <p>Apresentação do produto RotuScan — em desenvolvimento.</p>
-        </section>
+        <RotuScan />
+
+       
 
         <section id="equipe" className={styles.placeholderDark}>
           <span className={styles.eyebrow}>NOSSA EQUIPE</span>
