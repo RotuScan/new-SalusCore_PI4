@@ -1,13 +1,14 @@
+
 import styles from './Hero.module.css'
-import Carousel from '../../components/Carousel/Carousel' // Ajuste o caminho dependendo de onde salvou o componente
+//import Carousel from '../../components/Carousel/Carousel' // 1. Importe o Carousel (ajuste o caminho se necessário)
 
 export default function Hero() {
   const slides = [
-    { title: 'A', color: '#c82b2b' }, // Vermelho
-    { title: 'B', color: '#1d6bf3' }, // Azul
-    { title: 'C', color: '#2b2bc8' }, // Roxo
-    { title: 'D', color: '#2bc87a' }, // Verde
-    { title: 'E', color: '#c82ba4' }, // Rosa
+    { title: 'A', color: '#c5262a' },
+    { title: 'B', color: '#2454e9' },
+    { title: 'C', color: '#2b2bc8' },
+    { title: 'D', color: '#a8e900' },
+    { title: 'E', color: '#c82ba4' },
   ]
 
   return (
@@ -28,9 +29,11 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* O carrossel entra perfeitamente aqui dentro do bloco visual */}
-      <div className={styles.visual} aria-label="Carrossel de apresentação">
-        <Carousel items={slides} />
+      {/* 2. O Carousel fica aqui dentro do .visual, renderizado UMA única vez */}
+      <div className={styles.visual} aria-label="Elementos gráficos abstratos">
+        <div className={styles.carouselSection}>
+          <Carousel items={slides} />
+        </div>
       </div>
     </section>
   )
