@@ -2,7 +2,6 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
-// Estilos essenciais do Swiper
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -27,7 +26,11 @@ export default function Carousel({ items = [] }) {
               className={styles.card}
               style={{ backgroundColor: item.color }}
             >
-              <span className={styles.cardLetter}>{item.title}</span>
+              <img
+                className={styles.cardImage}
+                src={item.image}
+                alt={`Imagem ${item.title}`}
+              />
             </div>
           </SwiperSlide>
         ))}

@@ -1,14 +1,13 @@
-
 import styles from './Hero.module.css'
-//import Carousel from '../../components/Carousel/Carousel' // 1. Importe o Carousel (ajuste o caminho se necessário)
+import Carousel from '../../components/Carousel/Carousel' // 1. Importe o Carousel (ajuste o caminho se necessário)
 
 export default function Hero() {
   const slides = [
-    { title: 'A', color: '#c5262a' },
-    { title: 'B', color: '#2454e9' },
-    { title: 'C', color: '#2b2bc8' },
-    { title: 'D', color: '#a8e900' },
-    { title: 'E', color: '#c82ba4' },
+    { image: '/images/icon_saude.png', color: '#c5262a' },
+    { image: '/images/iconeDor.png', color: '#2454e9' },
+    { image: '/images/img1.png', color: '#2b2bc8' },
+    { image: '/images/mobile.png', color: '#a8e900' },
+    { image: '/images/backgroudimg.png', color: '#c82ba4' },
   ]
 
   return (

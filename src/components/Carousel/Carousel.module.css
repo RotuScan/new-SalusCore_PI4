@@ -1,3 +1,4 @@
+
 .carouselContainer {
   width: 100%;
   max-width: 800px;
@@ -16,21 +17,22 @@
   width: 100%;
   height: 260px;
   border-radius: 20px;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
   user-select: none;
   position: relative;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.cardLetter {
-  font-size: 4.5rem;
-  font-weight: 800;
-  color: #ffffff !important;
-  z-index: 10;
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
-  line-height: 1;
-  text-align: center;
 }
