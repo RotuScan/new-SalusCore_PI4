@@ -7,6 +7,7 @@ import RotuScan from '../../components/RotuScan/RotuScan'
 import Team from '../../components/Team/Team'
 
 
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -25,14 +26,12 @@ export default function Home() {
 
         <Team />
 
+        
+
        
 
       </main>
-      <footer className={styles.footer}>
-        <img src="/images/saluscore-mark.svg" alt="" />
-        <strong>SalusCore</strong>
-        <span>© {new Date().getFullYear()} SalusCore. Todos os direitos reservados.</span>
-      </footer>
+    
     </div>
   )
 }

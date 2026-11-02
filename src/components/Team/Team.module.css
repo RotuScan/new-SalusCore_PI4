@@ -111,6 +111,17 @@
   overflow-wrap: anywhere;
 }
 
+.my-teams-footer {
+  height: 20vw;
+  min-height: unset !important;
+  padding: 12px 16px !important; /* Reduz o espaço interno */
+  flex-shrink: 0; /* Impede que ele estique em layouts Flexbox */
+  
+
+}
+
+
+
 /* Tablets */
 
 @media (max-width: 850px) {

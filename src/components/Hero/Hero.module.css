@@ -103,6 +103,10 @@
 .decorThree { bottom: 8%; left: 3%; }
 .decorFour { bottom: 12%; right: 24%; width: 115px; height: 115px; }
 
+.carouselSection {
+  width: 100%;
+}
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;

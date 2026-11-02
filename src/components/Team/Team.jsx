@@ -1,5 +1,6 @@
 import { FiLinkedin, FiGithub, FiYoutube, FiMail } from 'react-icons/fi'
 import styles from './Team.module.css'
+import Footer from '../../components/Footer/Footer'
 // Importando corretamente da pasta src/assets/team/
 import arthurImg from '../../assets/team/arthur.jpeg'
 import endrewImg from '../../assets/team/endrew.jpeg'
@@ -55,55 +56,10 @@ export default function Team() {
 
       </div>
 
-      {/* Rodapé estruturado conforme o layout de referência */}
-      <footer className={styles.footer}>
-        <div className={styles.container}>
-          
-          {/* Coluna Esquerda: Logo e Direitos Reservados */}
-          <div className={styles.footerBrand}>
-            <div className={styles.logoWrapper}>
-              {/* Insira a sua imagem de logo aqui ou mantenha o texto estilizado */}
-              {/* <img src={logoImg} alt="SalusCore Logo" /> */}
-              <span className={styles.logoText}>SalusCore</span>
-            </div>
-            <p className={styles.rights}>Todos os direitos reservados ©2026 SalusCore</p>
-          </div>
+      <Footer className="my-teams-footer" />
 
-          {/* Coluna Central 1: Páginas */}
-          <div className={styles.linksColumn}>
-            <h4 className={styles.columnTitle}>Páginas:</h4>
-            <ul className={styles.linkList}>
-              <li><a href="/">Header</a></li>
-              <li><a href="/sobre">Sobre a equipe</a></li>
-              <li><a href="/mercado">Mercado</a></li>
-              <li><a href="/projeto">Produto</a></li>
-              <li><a href="/equipe">Sobre nós</a></li>
-            </ul>
-          </div>
-
-          {/* Coluna Central 2: RotuScan */}
-          <div className={styles.linksColumn}>
-            <h4 className={styles.columnTitle}>RotuScan:</h4>
-            <ul className={styles.linkList}>
-              <li><a href="#pitch">Pitch</a></li>
-              <li><a href="#site">Site</a></li>
-              <li><a href="#playstore">PlayStore</a></li>
-            </ul>
-          </div>
-
-          {/* Coluna Direita: Redes Sociais */}
-          <div className={styles.socialColumn}>
-            <h4 className={styles.columnTitle}>Nossas redes:</h4>
-            <div className={styles.socialIcons}>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FiYoutube /></a>
-              <a href="mailto:contato@saluscore.com"><FiMail /></a>
-            </div>
-          </div>
-
-        </div>
-      </footer>
-    </section>
+      </section>
   )
 }
+
+      
