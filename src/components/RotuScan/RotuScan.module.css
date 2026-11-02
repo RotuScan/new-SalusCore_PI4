@@ -1,14 +1,27 @@
+/* 1. CLASSE PRINCIPAL DA SEÇÃO (Responsável por ocupar a tela inteira) */
+.rotuscan {
+  width: 100%;
+  min-height: calc(100svh - 72px);
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o grid verticalmente no meio da tela */
+  padding: 0 7%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 2. CONTAINER INTERNO (Mantém o seu grid original de 2 colunas) */
 .container {
+  width: 100%;
   max-width: 1250px;
-  min-height: 380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 0;
 }
-
-
 
 .content {
   position: relative;
@@ -132,6 +145,8 @@
 /* Tablets */
 @media (max-width: 850px) {
   .rotuscan {
+    height: auto; /* Permite crescer naturalmente em telas menores se necessário */
+    min-height: auto;
     padding: 35px 5%;
   }
 
@@ -154,9 +169,10 @@
 }
 
 /* Celulares */
-
 @media (max-width: 650px) {
   .rotuscan {
+    height: auto;
+    min-height: auto;
     padding: 35px 6%;
   }
 

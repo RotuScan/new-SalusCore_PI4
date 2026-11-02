@@ -1,7 +1,15 @@
 .market {
   width: 100%;
-  min-height: 470px;
-  padding: 40px 7% 50px;
+  /* Garante que o componente ocupe pelo menos a altura total visível da tela */
+  min-height: calc(100svh - 72px);
+  height: 100svh; /* Força a ocupar exatamente 100% da altura da viewport */
+  
+  /* Transforma em Flexbox para centralizar o conteúdo verticalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding: 0 7%; /* Removemos o padding vertical fixo para o Flexbox alinhar tudo no centro */
   box-sizing: border-box;
   color: #ffffff;
   background: linear-gradient(

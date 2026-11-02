@@ -1,12 +1,27 @@
 .about {
   width: 100%;
-  min-height: 360px;
+  /* Garante que o componente ocupe pelo menos a altura total visível da tela */
+  min-height: calc(100svh - 72px);
+  height: 100svh; /* Força a ocupar exatamente 100% da altura da viewport */
+  
+  /* Transforma em Flexbox para centralizar o conteúdo verticalmente na tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   background: #ffffff;
   color: #111111;
-  padding: 45px 7% 30px;
+  padding: 0 7%; /* Removemos o padding vertical fixo para o Flexbox centralizar perfeitamente */
   box-sizing: border-box;
   border-bottom: 3px solid #1685ff;
   position: relative;
+}
+
+/* Garante que o container interno ocupe 100% da largura disponível */
+.about .container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .container {
