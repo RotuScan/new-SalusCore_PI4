@@ -11,7 +11,7 @@
   
   background: #ffffff;
   color: #111111;
-  padding: 0 7%; /* Removemos o padding vertical fixo para o Flexbox centralizar perfeitamente */
+  padding: 0 7%; 
   box-sizing: border-box;
   border-bottom: 3px solid #1685ff;
   position: relative;

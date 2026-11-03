@@ -1,15 +1,14 @@
 import { FiLinkedin, FiGithub, FiYoutube, FiMail } from 'react-icons/fi'
 import styles from './Team.module.css'
 import Footer from '../../components/Footer/Footer'
-// Importando corretamente da pasta src/assets/team/
+
 import arthurImg from '../../assets/team/arthur.jpeg'
 import endrewImg from '../../assets/team/endrew.jpeg'
 import guilhermeImg from '../../assets/team/guilherme.jpeg'
 import isaacImg from '../../assets/team/isaac.jpeg'
 import noemiImg from '../../assets/team/noemi.jpeg'
 
-// Se você tiver a logo da SalusCore importada, substitua o caminho abaixo:
-// import logoImg from '../../assets/logo.svg'
+
 
 const members = [
   { nome: 'Arthur Albino', cargo: 'DEVOPS', cor: 'blue', foto: arthurImg },

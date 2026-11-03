@@ -3,7 +3,7 @@ import styles from './RotuScan.module.css'
 export default function RotuScan() {
   return (
     <section className={styles.rotuscan} id="projeto">
-      {/* Adicionado o styles.container aqui */}
+      
       <div className={styles.container}>
 
         <div className={styles.content}>

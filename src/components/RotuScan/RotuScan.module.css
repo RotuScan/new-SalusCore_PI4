@@ -1,4 +1,4 @@
-/* 1. CLASSE PRINCIPAL DA SEÇÃO (Responsável por ocupar a tela inteira) */
+
 .rotuscan {
   width: 100%;
   min-height: calc(100svh - 72px);
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* 2. CONTAINER INTERNO (Mantém o seu grid original de 2 colunas) */
+
 .container {
   width: 100%;
   max-width: 1250px;

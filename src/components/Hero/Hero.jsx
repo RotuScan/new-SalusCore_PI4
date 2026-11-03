@@ -1,5 +1,5 @@
 import styles from './Hero.module.css'
-import Carousel from '../../components/Carousel/Carousel' // 1. Importe o Carousel (ajuste o caminho se necessário)
+import Carousel from '../../components/Carousel/Carousel' 
 
 export default function Hero() {
   const slides = [
