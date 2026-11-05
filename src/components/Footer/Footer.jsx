@@ -18,17 +18,20 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Coluna Central 1: Páginas */}
-        <div className={styles.linksColumn}>
-          <h4 className={styles.columnTitle}>Páginas:</h4>
-          <ul className={styles.linkList}>
-            <li><a href="/">Header</a></li>
-            <li><a href="/sobre">Sobre a equipe</a></li>
-            <li><a href="/mercado">Mercado</a></li>
-            <li><a href="/projeto">Produto</a></li>
-            <li><a href="/equipe">Sobre nós</a></li>
-          </ul>
-        </div>
+      
+{/* Coluna Central 1: Páginas */}
+<div className={styles.linksColumn}>
+  <h4 className={styles.columnTitle}>Páginas:</h4>
+
+  <ul className={styles.linkList}>
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#equipe">Sobre a equipe</a></li>
+    <li><a href="#mercado">Mercado</a></li>
+    <li><a href="#projeto">Produto</a></li>
+    <li><a href="#sobre">Sobre nós</a></li>
+  </ul>
+</div>
+
 
         {/* Coluna Central 2: RotuScan */}
         <div className={styles.linksColumn}>
