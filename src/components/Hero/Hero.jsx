@@ -4,11 +4,9 @@ import Carousel from '../../components/Carousel/Carousel'
 export default function Hero() {
   const slides = [
     { image: '/images/new-image1.png', color: '#c5262a' },
-    { image: '/images/new-image2.png', color: '#2454e9' },
-    { image: '/images/new-image3.png', color: '#2b2bc8' },
-    { image: '/images/new-image4.png', color: '#a8e900' },
-    { image: '/images/new-image5.png', color: '#c82ba4' },
-  ]
+    { image: '/images/new-image3.png', color: '#2454e9' },
+    { image: '/images/new-image5.png', color: '#a8e900' },
+    ]
 
   return (
     <section className={styles.hero} id="inicio">
